@@ -46,9 +46,40 @@ var ans = arr.map(function(val){
 
 
 
+// filter  -  filter ka bhi exact structre map ki tarah hai 
+// iska matlab filter bhi return karega
+// ab return jo hoga wo har haalat mein ek boolean hona chahiye 
+// map jo retrun karta tha wo hi directly save hota tha imaginary array mein 
+// par filter kyunki boolean return kar raha hai to boolean save nahi hoti balki boolean ki jagah jo us waqt value chal rahi hoti hai wo save hoti hai 
 
 
+var arr = [1,2,3,4,5,6];
+
+arr.filter(function(val){
+    return 1 < 2;
+})
 
 
+var ans = arr.filter(function(val){
+    if (val % 2 === 0 ) {
+        return this;
+    }
+})
 
-// filter  -  filter bhi exact structre map ki tarah hai 
+
+// array mein jitne bhi naam aise hain jinme (a) aa raha ho aise nammon ko hata do
+
+var arr = [ "mohita","anurag", "jaanardhan", "saumesh" ];
+
+var ans = arr.filter(function(val){
+    return !val.includes("a")
+})
+
+
+// aise naamo ko remove karo jinme 2 ya 2 se jyada baar (a) aa raha ho
+
+var arr = ["harsh", "abhay", "sumit", "anushka", "radhika"]
+
+var ans = arr.filter(function(val){
+    if(val.split("a").length <=2) return true;
+})
