@@ -38,3 +38,13 @@ var newarr = arr.forEach(function(elem){
 })
 
 arr = newarr;
+
+
+// Q4 :- Write a JavaScript Function to Clone an Array.
+
+function cloneArr(arr){
+    return[...arr];
+}
+
+var newarr = cloneArr([1,2,3,4]);
+
