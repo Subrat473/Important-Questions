@@ -1,0 +1,42 @@
+/* What is closure and how do you use it?
+
+When a function returns the other function the returning function will hold its environment and this is known as closure. 
+
+
+
+How to add one new element at end of an array in javascript?
+
+Push method adds one or more elements to the end of an array and returns the new length of the array.
+
+
+
+What is SetTimeout()?
+
+When you setTimeout it becomes asynchronous and it has to wait on the stack to get everything got finished
+
+
+Which built-in method reverses the order of the elements of an array?
+
+
+Reverse method reverses the order of the elements of an array ?? the first becomes the last, and the last becomes the first.
+
+
+
+
+What is prototypal Inheritance?
+
+
+Every object has a property called a prototype, where we can add methods to it and when you create another object from these the newly created object will automatically inherit its parent’s property.
+
+
+
+
+Difference between “undefine” and “NULL” Keywords?
+
+When you define a var but not assign any value. typeof(undefine)=> undefine Null- manually done. typeof(null)=> object
+
+
+
+Difference between “==” and “===” ?
+
+” ==” only compares values “===” compare values and type both.
