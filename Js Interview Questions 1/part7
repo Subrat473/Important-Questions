@@ -39,4 +39,4 @@ When you define a var but not assign any value. typeof(undefine)=> undefine Null
 
 Difference between “==” and “===” ?
 
-” ==” only compares values “===” compare values and type both.
+” ==” only compares values “===” compare values and type both
