@@ -2,12 +2,12 @@
 
 // Let's observe the below code and it's explaination
 
-// console.log("Start");
-// setTimeout(function cb() {
-//   console.log("Callback");
-// }, 5000);
-// console.log("End");
-// // Millions of lines of code to execute
+console.log("Start");
+setTimeout(function cb() {
+  console.log("Callback");
+}, 5000);
+console.log("End");
+ // Millions of lines of code to execute
 
 // // o/p: Over here setTimeout exactly doesn't guarantee that the callback function will be called exactly after 5s. Maybe 6,7 or even 10! It all depends on callstack. Why?
 // Reason?
@@ -35,6 +35,6 @@
 //   console.log("Callback");
 // }, 0);
 // console.log("End");
- // Even though timer = 0s, the cb() has to go through the queue. Registers calback in webapi's env , moves to callback queue, and execute once callstack is empty.
+// Even though timer = 0s, the cb() has to go through the queue. Registers calback in webapi's env , moves to callback queue, and execute once callstack is empty.
 // O/p - Start End Callback
 //  This method of putting timer = 0, can be used to defer a less imp function by a little so the more important function(here printing "End") can take place
